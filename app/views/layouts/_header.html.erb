@@ -1,4 +1,7 @@
 <div class="grid_12" id="header">
 	<h1>Site Logo</h1>
-
+	<div id="user_info">
+		Logged in as: <%= facebook_session.user.name if facebook_session %>
+		<%= fb_logout_link("Logout", "/users/logout_facebook") if facebook_session %>
+	</div>
 </div>
