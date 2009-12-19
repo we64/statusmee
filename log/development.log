@@ -12340,3 +12340,123 @@ ActionController::RoutingError (No route matches "/img/12_col.gif" with {:method
   -e:2
 
 Rendering D:/dev/workspaces/app_connect/vendor/plugins/facebooker/templates/layout.erb (200)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-12-19 13:28:57) [GET]
+Rendering template within layouts/application
+Rendering home/index
+facebook.users.getInfo (0) Facebooker::Session::SessionExpired: Session key invalid or no longer valid: fields = status,political,pic_small,name,quotes,is_app_user,tv,profile_update_time,meeting_sex,hs_info,timezone,relationship_status,hometown_location,about_me,wall_count,significant_other_id,pic_big,music,work_history,sex,religion,notes_count,activities,pic_square,movies,has_added_app,education_history,birthday,birthday_date,first_name,meeting_for,last_name,interests,current_location,pic,books,affiliations,locale,profile_url,proxied_email,email_hashes,allowed_restrictions,pic_with_logo,pic_big_with_logo,pic_small_with_logo,pic_square_with_logo,online_presence,verified,profile_blurb,username,website,is_blocked,family, uids = 503733181
+
+ActionView::TemplateError (Session key invalid or no longer valid) on line #4 of app/views/layouts/_header.html.erb:
+1: <div class="grid_12" id="header">
+2: 	<h1>Site Logo</h1>
+3: 	<div id="user_info">
+4: 		Logged in as: <%= facebook_session.user.name if facebook_session %>
+5: 		<%= fb_logout_link("Logout", "/users/logout_facebook") if facebook_session %>
+6: 	</div>
+7: </div>
+
+    app/views/layouts/_header.html.erb:4
+    app/views/layouts/application.html.erb:17
+    -e:2:in `load'
+    -e:2
+
+Rendered rescues/_trace (125.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering D:/dev/workspaces/app_connect/vendor/plugins/facebooker/templates/layout.erb (200)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-12-19 13:35:01) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_header (0.0ms)
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-12-19 13:35:05) [GET]
+
+ActionController::RoutingError (No route matches "/img/12_col.gif" with {:method=>:get, :canvas=>false}):
+  -e:2:in `load'
+  -e:2
+
+Rendering D:/dev/workspaces/app_connect/vendor/plugins/facebooker/templates/layout.erb (200)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-12-19 13:39:18) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_header (0.0ms)
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-12-19 13:39:18) [GET]
+
+ActionController::RoutingError (No route matches "/img/12_col.gif" with {:method=>:get, :canvas=>false}):
+  -e:2:in `load'
+  -e:2
+
+Rendering D:/dev/workspaces/app_connect/vendor/plugins/facebooker/templates/layout.erb (200)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-12-19 13:42:07) [GET]
+Rendering template within layouts/application
+Rendering home/index
+facebook.users.getInfo (0) Facebooker::Session::SessionExpired: Session key invalid or no longer valid: fields = status,political,pic_small,name,quotes,is_app_user,tv,profile_update_time,meeting_sex,hs_info,timezone,relationship_status,hometown_location,about_me,wall_count,significant_other_id,pic_big,music,work_history,sex,religion,notes_count,activities,pic_square,movies,has_added_app,education_history,birthday,birthday_date,first_name,meeting_for,last_name,interests,current_location,pic,books,affiliations,locale,profile_url,proxied_email,email_hashes,allowed_restrictions,pic_with_logo,pic_big_with_logo,pic_small_with_logo,pic_square_with_logo,online_presence,verified,profile_blurb,username,website,is_blocked,family, uids = 503733181
+
+ActionView::TemplateError (Session key invalid or no longer valid) on line #4 of app/views/layouts/_header.html.erb:
+1: <div class="grid_12" id="header">
+2: 	<h1>Site Logo</h1>
+3: 	<div id="user_info">
+4: 		Logged in as: <%= facebook_session.user.name if facebook_session %>
+5: 		<%= fb_logout_link("Logout", "/users/logout_facebook") if facebook_session %>
+6: 	</div>
+7: </div>
+
+    app/views/layouts/_header.html.erb:4
+    app/views/layouts/application.html.erb:17
+    -e:2:in `load'
+    -e:2
+
+Rendered rescues/_trace (125.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering D:/dev/workspaces/app_connect/vendor/plugins/facebooker/templates/layout.erb (200)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-12-19 13:43:27) [GET]
+Rendering template within layouts/application
+Rendering home/index
+facebook.users.getInfo (0) Facebooker::Session::SessionExpired: Session key invalid or no longer valid: fields = status,political,pic_small,name,quotes,is_app_user,tv,profile_update_time,meeting_sex,hs_info,timezone,relationship_status,hometown_location,about_me,wall_count,significant_other_id,pic_big,music,work_history,sex,religion,notes_count,activities,pic_square,movies,has_added_app,education_history,birthday,birthday_date,first_name,meeting_for,last_name,interests,current_location,pic,books,affiliations,locale,profile_url,proxied_email,email_hashes,allowed_restrictions,pic_with_logo,pic_big_with_logo,pic_small_with_logo,pic_square_with_logo,online_presence,verified,profile_blurb,username,website,is_blocked,family, uids = 503733181
+
+ActionView::TemplateError (Session key invalid or no longer valid) on line #4 of app/views/layouts/_header.html.erb:
+1: <div class="grid_12" id="header">
+2: 	<h1>Site Logo</h1>
+3: 	<div id="user_info">
+4: 		Logged in as: <%= facebook_session.user.name if facebook_session %>
+5: 		<%= fb_logout_link("Logout", "/users/logout_facebook") if facebook_session %>
+6: 	</div>
+7: </div>
+
+    app/views/layouts/_header.html.erb:4
+    app/views/layouts/application.html.erb:17
+    -e:2:in `load'
+    -e:2
+
+Rendered rescues/_trace (109.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering D:/dev/workspaces/app_connect/vendor/plugins/facebooker/templates/layout.erb (200)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-12-19 13:43:50) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_header (0.0ms)
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-12-19 13:43:57) [GET]
+
+ActionController::RoutingError (No route matches "/img/12_col.gif" with {:method=>:get, :canvas=>false}):
+  -e:2:in `load'
+  -e:2
+
+Rendering D:/dev/workspaces/app_connect/vendor/plugins/facebooker/templates/layout.erb (200)
