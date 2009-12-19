@@ -12468,3 +12468,83 @@ Processing Rails::InfoController#properties (for 127.0.0.1 at 2009-12-19 14:17:4
  WHERE type = 'table' AND NOT name = 'sqlite_sequence'
 [0m
 Completed in 312ms (View: 31, DB: 47) | 200 OK [http://127.0.0.1/rails/info/properties]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-12-19 14:51:06) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_header (0.0ms)
+Completed in 282ms (View: 282, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-12-19 14:51:07) [GET]
+
+ActionController::RoutingError (No route matches "/img/12_col.gif" with {:canvas=>false, :method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering D:/dev/workspaces/app_connect/vendor/plugins/facebooker/templates/layout.erb (200)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-12-19 14:51:19) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_header (0.0ms)
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-12-19 14:51:19) [GET]
+
+ActionController::RoutingError (No route matches "/img/12_col.gif" with {:canvas=>false, :method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering D:/dev/workspaces/app_connect/vendor/plugins/facebooker/templates/layout.erb (200)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-12-19 14:51:20) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_header (0.0ms)
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-12-19 14:51:20) [GET]
+
+ActionController::RoutingError (No route matches "/img/12_col.gif" with {:canvas=>false, :method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering D:/dev/workspaces/app_connect/vendor/plugins/facebooker/templates/layout.erb (200)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-12-19 14:51:21) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_header (0.0ms)
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-12-19 14:51:21) [GET]
+
+ActionController::RoutingError (No route matches "/img/12_col.gif" with {:canvas=>false, :method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering D:/dev/workspaces/app_connect/vendor/plugins/facebooker/templates/layout.erb (200)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-12-19 14:55:05) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_header (0.0ms)
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-12-19 14:55:05) [GET]
+
+ActionController::RoutingError (No route matches "/img/12_col.gif" with {:canvas=>false, :method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering D:/dev/workspaces/app_connect/vendor/plugins/facebooker/templates/layout.erb (200)
