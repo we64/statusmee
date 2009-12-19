@@ -10,6 +10,15 @@
 		<%= javascript_include_tag :defaults%>
 	</head>
 	<body>
-test
+		<%= fb_connect_javascript_tag %>
+		<%= init_fb_connect "XFBML"%>
+		
+		<div class="container_12">
+			<%= render :partial => "layouts/header" %> 
+			
+			<div class="clear"></div>
+			<%= yield %>
+			<div class="clear"></div>
+		</div>
 	</body>
 </html>

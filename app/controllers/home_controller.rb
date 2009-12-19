@@ -1,6 +1,6 @@
 class HomeController < ApplicationController
   
-  #before_filter :login_redirect, :only => [:index]
+  before_filter :login_redirect, :only => [:index]
   
   def index
     

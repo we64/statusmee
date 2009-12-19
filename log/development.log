@@ -12460,3 +12460,11 @@ ActionController::RoutingError (No route matches "/img/12_col.gif" with {:method
   -e:2
 
 Rendering D:/dev/workspaces/app_connect/vendor/plugins/facebooker/templates/layout.erb (200)
+
+
+Processing Rails::InfoController#properties (for 127.0.0.1 at 2009-12-19 14:17:45) [GET]
+  [4;36;1mSQL (47.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+Completed in 312ms (View: 31, DB: 47) | 200 OK [http://127.0.0.1/rails/info/properties]
