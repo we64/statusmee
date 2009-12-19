@@ -1,0 +1,32 @@
+<%= fb_login_button('window.location = "/users/login";', :size => :large) %>
+<%= fb_logout_link("Logout", "/users/logout_facebook") %>
+<br />
+Set permissions: <%= fb_prompt_permission("status_update", "Status permission") %>
+<% if facebook_session %>
+	<h2>You are logged in as <%= facebook_session.user.name %></h2>
+	<fb:profile-pic uid="<%= facebook_session.user.id %>" size="thumb" ></fb:profile-pic>
+	
+
+	<h2>Here are your friends</h2>
+	<% for friend in facebook_session.user.friends do %>
+		<fb:profile-pic uid="<%= friend.id %>" size="thumb" ></fb:profile-pic>
+	<% end %>
+	
+	<br />
+	
+	<h2>Statuses</h2>
+	<ul>
+		<% for status in facebook_session.user.statuses do %>
+			<li><%= status.message %></li>
+		<% end %>
+	</ul>
+	
+	<h2>Update Status</h2>
+	<% form_tag(:controller => "users", :action => "update_status") do -%>
+		<%= label_tag(:message, "What are you doing?") %><br />
+		<%= text_area_tag(:message, nil, :size => "44x6") %><br />
+		<%= submit_tag("Update") %>
+	<% end -%>
+<% else %>
+	<h2>You are not logged in!</h2>
+<% end %>

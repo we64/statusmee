@@ -1,0 +1,8 @@
+<h1>Welcome!!!</h1>
+<p>
+	This simple applications allows you to update your statuses on <br />
+	<%= fb_login_button('window.location = "/users/login";', :size => :large) %>
+	<%= fb_logout_link("Logout", "/users/logout_facebook") %>
+	<%= debug(facebook_session) %>
+	 & Xiaonei
+</p>
