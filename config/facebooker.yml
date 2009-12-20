@@ -36,14 +36,15 @@ test:
     server_alive_interval: 0
 
 production:
-  api_key: 
-  secret_key: 
-  canvas_page_name: 
-  callback_url: 
-  set_asset_host_to_callback_url: true   
+  api_key: e1a0776281b0ab486e48fef96157a8cc
+  secret_key: 9cce5d1277b10fc199319cafb7ae14b6
+  canvas_page_name: JWLapp
+  callback_url: http://appconnect.heroku.com/
+  pretty_errors: true
+  set_asset_host_to_callback_url: true
   tunnel:
-    public_host_username: 
-    public_host: 
+    public_host_username: jwluo21
+    public_host: http://heroku.com/
     public_port: 4007
     local_port: 3000
     server_alive_interval: 0

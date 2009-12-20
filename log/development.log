@@ -12548,3 +12548,10 @@ ActionController::RoutingError (No route matches "/img/12_col.gif" with {:canvas
   -e:2
 
 Rendering D:/dev/workspaces/app_connect/vendor/plugins/facebooker/templates/layout.erb (200)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-12-19 18:10:52) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_header (0.0ms)
+Completed in 32ms (View: 32, DB: 0) | 200 OK [http://127.0.0.1/]
