@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-		<title>Application Connect</title>
+		<title>StatusMee</title>
 		<%= stylesheet_link_tag "reset" %>
 		<%= stylesheet_link_tag "text" %>
 		<%= stylesheet_link_tag "960" %>
@@ -17,7 +17,9 @@
 			<%= render :partial => "layouts/header" %> 
 			
 			<div class="clear"></div>
+<% User.if_logged_in_fb? %>
 			<%= yield %>
+			
 			<div class="clear"></div>
 		</div>
 	</body>

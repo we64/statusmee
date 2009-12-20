@@ -2,7 +2,7 @@
 	<h2>Login with your facebook account</h2>
 	<p><%= image_tag("http://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Facebook.svg/200px-Facebook.svg.png") %></p>
 	<p>
-		<%= fb_login_button('window.location = "/users";', :size => :large) %>
+		<%= fb_login_button('window.location = "/users";', :size => :large) if not facebook_session %>
 		<%= fb_logout_link("Logout", "/users/logout_facebook") if facebook_session %>
 	</p>
 </div>
