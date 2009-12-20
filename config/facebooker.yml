@@ -14,7 +14,7 @@ development:
   canvas_page_name: JWLapp
   callback_url: http://127.0.0.1:3001/
   pretty_errors: true
-  set_asset_host_to_callback_url: true
+  set_asset_host_to_callback_url: false
   tunnel:
     public_host_username: 
     public_host: 
@@ -41,7 +41,7 @@ production:
   canvas_page_name: StatusMee
   callback_url: http://appconnect.heroku.com/
   pretty_errors: true
-  set_asset_host_to_callback_url: true
+  set_asset_host_to_callback_url: false
   tunnel:
     public_host_username: jwluo21
     public_host: http://heroku.com/
