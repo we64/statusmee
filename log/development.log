@@ -12816,3 +12816,99 @@ ActionView::TemplateError (undefined local variable or method `facebook_session'
 Rendered rescues/_trace (250.0ms)
 Rendered rescues/_request_and_response (0.0ms)
 Rendering D:/dev/workspaces/app_connect/vendor/plugins/facebooker/templates/layout.erb (200)
+
+
+Processing UsersController#index (for 127.0.0.1 at 2009-12-20 01:36:58) [GET]
+Rendering template within layouts/application
+Rendering users/index
+facebook.status.get (0.437000036239624) uid = 503733181, limit = 50
+**Warning**, Attempt to set non-attribute: uid (0) message...2time1261167089uid503733181status_id260284849912source195097468362
+**Warning**, Attempt to set non-attribute: source (0) message...2time1261167089uid503733181status_id260284849912source195097468362
+**Warning**, Attempt to set non-attribute: uid (0) message...time1260949266uid503733181status_id350293695503source0
+**Warning**, Attempt to set non-attribute: source (0) message...time1260949266uid503733181status_id350293695503source0
+facebook.fql.query (0.422000169754028) format = XML, query = SELECT fromid, time, text FROM comment WHERE post_id='503733181_260284849912'
+facebook.fql.query (0.407000064849854) format = XML, query = SELECT fromid, time, text FROM comment WHERE post_id='503733181_350293695503'
+Rendered users/_status_update_form (1297.0ms)
+**Warning**, Attempt to set non-attribute: school_type (0) nameWaterloodegreeyear2007school_typeCollegeconcentrations
+facebook.users.getInfo (0.437000036239624) fields = status,political,pic_small,name,quotes,is_app_user,tv,profile_update_time,meeting_sex,hs_info,timezone,relationship_status,hometown_location,about_me,wall_count,significant_other_id,pic_big,music,work_history,sex,religion,notes_count,activities,pic_square,movies,has_added_app,education_history,birthday,birthday_date,first_name,meeting_for,last_name,interests,current_location,pic,books,affiliations,locale,profile_url,proxied_email,email_hashes,allowed_restrictions,pic_with_logo,pic_big_with_logo,pic_small_with_logo,pic_square_with_logo,online_presence,verified,profile_blurb,username,website,is_blocked,family, uids = 503733181
+facebook.friends.get (0.421999931335449) uid = 503733181
+Rendered layouts/_header (0.0ms)
+
+ActionView::TemplateError (undefined method `if_logged_in_fb?' for User:Class) on line #20 of app/views/layouts/application.html.erb:
+17: 			<%= render :partial => "layouts/header" %> 
+18: 			
+19: 			<div class="clear"></div>
+20: <% User.if_logged_in_fb? %>
+21: 			<%= yield %>
+22: 			
+23: 			<div class="clear"></div>
+
+    app/views/layouts/application.html.erb:20
+    -e:2:in `load'
+    -e:2
+
+Rendered rescues/_trace (141.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering D:/dev/workspaces/app_connect/vendor/plugins/facebooker/templates/layout.erb (200)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-12-20 01:37:10) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_header (0.0ms)
+
+ActionView::TemplateError (undefined method `if_logged_in_fb?' for User:Class) on line #20 of app/views/layouts/application.html.erb:
+17: 			<%= render :partial => "layouts/header" %> 
+18: 			
+19: 			<div class="clear"></div>
+20: <% User.if_logged_in_fb? %>
+21: 			<%= yield %>
+22: 			
+23: 			<div class="clear"></div>
+
+    app/views/layouts/application.html.erb:20
+    -e:2:in `load'
+    -e:2
+
+Rendered rescues/_trace (219.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering D:/dev/workspaces/app_connect/vendor/plugins/facebooker/templates/layout.erb (200)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-12-20 01:37:40) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_header (0.0ms)
+
+ActionView::TemplateError (undefined method `if_logged_in_fb?' for User:Class) on line #20 of app/views/layouts/application.html.erb:
+17: 			<%= render :partial => "layouts/header" %> 
+18: 			
+19: 			<div class="clear"></div>
+20: <% User.if_logged_in_fb? %>
+21: 			<%= yield %>
+22: 			
+23: 			<div class="clear"></div>
+
+    app/views/layouts/application.html.erb:20
+    -e:2:in `load'
+    -e:2
+
+Rendered rescues/_trace (94.0ms)
+Rendered rescues/_request_and_response (15.0ms)
+Rendering D:/dev/workspaces/app_connect/vendor/plugins/facebooker/templates/layout.erb (200)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-12-20 01:37:53) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_header (0.0ms)
+Completed in 297ms (View: 281, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-12-20 01:37:54) [GET]
+
+ActionController::RoutingError (No route matches "/img/12_col.gif" with {:canvas=>false, :method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering D:/dev/workspaces/app_connect/vendor/plugins/facebooker/templates/layout.erb (200)
