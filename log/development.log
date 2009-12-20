@@ -12571,3 +12571,20 @@ ActionController::RoutingError (No route matches "/img/12_col.gif" with {:canvas
   -e:2
 
 Rendering D:/dev/workspaces/app_connect/vendor/plugins/facebooker/templates/layout.erb (200)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-12-20 00:40:00) [GET]
+  Parameters: {"session"=>"{\"session_key\":\"3.5wB0BiAofZ7SZkpB_mgLaw__.86400.1261375200-503733181\",\"uid\":\"503733181\",\"expires\":1261375200,\"secret\":\"38p2L08HTlRKu3U1EKxbgA__\",\"sig\":\"2249f3f612a587d1baa23f5ccefe4587\"}", "next"=>"http://appconnect.heroku.com/xd_receiver.html?fb_login&fname=_opener&guid=0.9909529946744442"}
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_header (0.0ms)
+Completed in 93ms (View: 93, DB: 0) | 200 OK [http://127.0.0.1/?session=%7B%22session_key%22%3A%223.5wB0BiAofZ7SZkpB_mgLaw__.86400.1261375200-503733181%22%2C%22uid%22%3A%22503733181%22%2C%22expires%22%3A1261375200%2C%22secret%22%3A%2238p2L08HTlRKu3U1EKxbgA__%22%2C%22sig%22%3A%222249f3f612a587d1baa23f5ccefe4587%22%7D&next=http%3A%2F%2Fappconnect.heroku.com%2Fxd_receiver.html%3Ffb_login%26fname%3D_opener%26guid%3D0.9909529946744442]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-12-20 00:40:01) [GET]
+
+ActionController::RoutingError (No route matches "/img/12_col.gif" with {:canvas=>false, :method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering D:/dev/workspaces/app_connect/vendor/plugins/facebooker/templates/layout.erb (200)

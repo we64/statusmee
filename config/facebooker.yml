@@ -36,9 +36,9 @@ test:
     server_alive_interval: 0
 
 production:
-  api_key: e1a0776281b0ab486e48fef96157a8cc
-  secret_key: 9cce5d1277b10fc199319cafb7ae14b6
-  canvas_page_name: JWLapp
+  api_key: 9bd53c8de2bcf67a1db236c662d55e16
+  secret_key: 28658e846895b594da8f128431d21106
+  canvas_page_name: StatusMee
   callback_url: http://appconnect.heroku.com/
   pretty_errors: true
   set_asset_host_to_callback_url: true
