@@ -12555,3 +12555,19 @@ Rendering template within layouts/application
 Rendering home/index
 Rendered layouts/_header (0.0ms)
 Completed in 32ms (View: 32, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-12-19 23:36:10) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_header (0.0ms)
+Completed in 2500ms (View: 281, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-12-19 23:36:14) [GET]
+
+ActionController::RoutingError (No route matches "/img/12_col.gif" with {:canvas=>false, :method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering D:/dev/workspaces/app_connect/vendor/plugins/facebooker/templates/layout.erb (200)
