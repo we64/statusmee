@@ -12912,3 +12912,64 @@ ActionController::RoutingError (No route matches "/img/12_col.gif" with {:canvas
   -e:2
 
 Rendering D:/dev/workspaces/app_connect/vendor/plugins/facebooker/templates/layout.erb (200)
+
+
+Processing UsersController#index (for 127.0.0.1 at 2009-12-20 01:38:17) [GET]
+Rendering template within layouts/application
+Rendering users/index
+facebook.status.get (0.515000104904175) uid = 503733181, limit = 50
+**Warning**, Attempt to set non-attribute: uid (0) message...2time1261167089uid503733181status_id260284849912source195097468362
+**Warning**, Attempt to set non-attribute: source (0) message...2time1261167089uid503733181status_id260284849912source195097468362
+**Warning**, Attempt to set non-attribute: uid (0) message...time1260949266uid503733181status_id350293695503source0
+**Warning**, Attempt to set non-attribute: source (0) message...time1260949266uid503733181status_id350293695503source0
+facebook.fql.query (0.532000064849854) format = XML, query = SELECT fromid, time, text FROM comment WHERE post_id='503733181_260284849912'
+facebook.fql.query (0.483999967575073) format = XML, query = SELECT fromid, time, text FROM comment WHERE post_id='503733181_350293695503'
+Rendered users/_status_update_form (1531.0ms)
+**Warning**, Attempt to set non-attribute: school_type (0) nameWaterloodegreeyear2007school_typeCollegeconcentrations
+facebook.users.getInfo (0.546999931335449) fields = status,political,pic_small,name,quotes,is_app_user,tv,profile_update_time,meeting_sex,hs_info,timezone,relationship_status,hometown_location,about_me,wall_count,significant_other_id,pic_big,music,work_history,sex,religion,notes_count,activities,pic_square,movies,has_added_app,education_history,birthday,birthday_date,first_name,meeting_for,last_name,interests,current_location,pic,books,affiliations,locale,profile_url,proxied_email,email_hashes,allowed_restrictions,pic_with_logo,pic_big_with_logo,pic_small_with_logo,pic_square_with_logo,online_presence,verified,profile_blurb,username,website,is_blocked,family, uids = 503733181
+facebook.friends.get (0.5) uid = 503733181
+Rendered layouts/_header (16.0ms)
+Completed in 2594ms (View: 2594, DB: 0) | 200 OK [http://127.0.0.1/users]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-12-20 01:38:20) [GET]
+
+ActionController::RoutingError (No route matches "/img/12_col.gif" with {:canvas=>false, :method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering D:/dev/workspaces/app_connect/vendor/plugins/facebooker/templates/layout.erb (200)
+
+
+Processing UsersController#comment_status (for 127.0.0.1 at 2009-12-20 01:38:25) [POST]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"ZJNB5YN6yp4UutV8XzGNpWSn9vsJ7yroD9xIv+jhCwQ=", "status_comment"=>"...3", "status_id"=>"503733181_260284849912"}
+facebook.stream.addComment (0.577999830245972) comment = ...3, post_id = 503733181_260284849912
+Redirected to http://127.0.0.1:3001/users
+Completed in 593ms (DB: 0) | 302 Found [http://127.0.0.1/users/comment_status]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2009-12-20 01:38:26) [GET]
+Rendering template within layouts/application
+Rendering users/index
+facebook.status.get (0.483999967575073) uid = 503733181, limit = 50
+**Warning**, Attempt to set non-attribute: uid (0) message...2time1261167089uid503733181status_id260284849912source195097468362
+**Warning**, Attempt to set non-attribute: source (0) message...2time1261167089uid503733181status_id260284849912source195097468362
+**Warning**, Attempt to set non-attribute: uid (0) message...time1260949266uid503733181status_id350293695503source0
+**Warning**, Attempt to set non-attribute: source (0) message...time1260949266uid503733181status_id350293695503source0
+facebook.fql.query (0.516000032424927) format = XML, query = SELECT fromid, time, text FROM comment WHERE post_id='503733181_260284849912'
+facebook.fql.query (0.5) format = XML, query = SELECT fromid, time, text FROM comment WHERE post_id='503733181_350293695503'
+Rendered users/_status_update_form (1500.0ms)
+**Warning**, Attempt to set non-attribute: school_type (0) nameWaterloodegreeyear2007school_typeCollegeconcentrations
+facebook.users.getInfo (0.734999895095825) fields = status,political,pic_small,name,quotes,is_app_user,tv,profile_update_time,meeting_sex,hs_info,timezone,relationship_status,hometown_location,about_me,wall_count,significant_other_id,pic_big,music,work_history,sex,religion,notes_count,activities,pic_square,movies,has_added_app,education_history,birthday,birthday_date,first_name,meeting_for,last_name,interests,current_location,pic,books,affiliations,locale,profile_url,proxied_email,email_hashes,allowed_restrictions,pic_with_logo,pic_big_with_logo,pic_small_with_logo,pic_square_with_logo,online_presence,verified,profile_blurb,username,website,is_blocked,family, uids = 503733181
+facebook.friends.get (0.5) uid = 503733181
+Rendered layouts/_header (0.0ms)
+Completed in 2781ms (View: 2781, DB: 0) | 200 OK [http://127.0.0.1/users]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-12-20 01:38:29) [GET]
+
+ActionController::RoutingError (No route matches "/img/12_col.gif" with {:canvas=>false, :method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering D:/dev/workspaces/app_connect/vendor/plugins/facebooker/templates/layout.erb (200)
